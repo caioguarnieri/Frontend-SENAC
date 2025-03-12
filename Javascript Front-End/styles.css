@@ -2,7 +2,7 @@
   display: block;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 1px;
   color: rgb(0, 17, 255);
   border: 1px dotted rgb(245, 6, 6);
   
@@ -11,21 +11,25 @@
   text-align: center;
   border-radius: 5px;
   color: green;
-  border: blue solid 2px;
+  border: blue solid 1px;
   padding: 10px 100px 10px 100px;
 }
 .btnconfig{
-  border-radius: 50px;
+  border-radius: 5px;
   border: #25cfdb solid 5px;
   text-align: center;
 }
+.btn{
+  padding: 0.5rem ;
+  border-radius: 5px;
+}
 .btn :hover{
-  border-radius: 50px;
+  padding: 0.5rem ;
   background-color: rgb(165, 235, 53);
   color: #db2525;
 }
 .times{
-border-radius: 50px;
+border-radius: 1px;
 border: #db2525 solid 2px;  
 text-align: center;
 }
@@ -36,7 +40,7 @@ text-align: center;
   width: 15%;
   height: auto;
   margin: 0 auto;
-  border: 2px dashed black;
+  border: 1px dashed black;
   
 }
 
