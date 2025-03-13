@@ -1,12 +1,84 @@
-.nave{
-  display: block;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
-  border-radius: 1px;
-  color: rgb(0, 17, 255);
-  border: 1px dotted rgb(245, 6, 6);
+nav {
+&.primary-navigation {
+    
+    display: block;
+    padding:  0 0 0;  
+    text-align: center;
+    font-size: 16px;
   
+    ul li {
+      list-style: none;
+      margin: 0 auto;
+      border-left: 2px solid #64e73c;
+      display: inline-block;
+      padding: 0 30px;
+      position: relative;
+      text-decoration: none;
+      text-align: center;
+      font-family: arvo;
+    }
+
+    li a {
+      color: black;
+    }
+
+    li a:hover {
+      color: #3ca0e7;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    ul li ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+padding-left: 0;
+      left: 0;
+      display: none;
+      background: white;
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      min-width: 250px;
+      text-align: left;
+      padding-top: 20px;
+      box-shadow: 0px 3px 5px -1px #ccc;
+    }
+
+    ul li ul li {
+      clear: both;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      border-style: none;
+    }
+
+    ul li ul li a:hover {
+      padding-left: 10px;
+      border-left: 2px solid #3ca0e7;
+      transition: all 0.3s ease;
+    }
+  }
 }
+
+a {
+
+    text-decoration: none;
+
+    &:hover {
+        color: #3CA0E7;
+    }
+ 
+}
+
+ ul li ul li a { transition: all 0.5s ease; }
+
 .titulo{
   text-align: center;
   border-radius: 5px;
@@ -15,31 +87,33 @@
   padding: 10px 100px 10px 100px;
 }
 .btnconfig{
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 5px;
-  border: #25cfdb solid 5px;
-  text-align: center;
+  border: #25cfdb solid 1px;
+
 }
-.btn{
-  padding: 0.5rem ;
-  border-radius: 5px;
-}
-.btn :hover{
-  padding: 0.5rem ;
-  background-color: rgb(165, 235, 53);
-  color: #db2525;
-}
+
 .times{
 border-radius: 1px;
 border: #db2525 solid 2px;  
 text-align: center;
 }
 
-.form{
+.container{
   display: flex;
-  padding: 50px 50px 50px 50px;
-  width: 15%;
-  height: auto;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 80%
+}
+
+.form{ 
+  width: 20vh;
+  justify-content:center;
+  padding: 20px;
+  
+
+  
   border: 1px dashed black;
   
 }
@@ -48,3 +122,8 @@ label {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #db2525;
 }
+
+.foot{
+  border:1px  chocolate solid;
+}
+
