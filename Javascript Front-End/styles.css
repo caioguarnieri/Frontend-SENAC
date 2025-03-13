@@ -1,6 +1,5 @@
 nav {
 &.primary-navigation {
-    
     display: block;
     padding:  0 0 0;  
     text-align: center;
@@ -34,7 +33,7 @@ nav {
       visibility: hidden;
       opacity: 0;
       position: absolute;
-padding-left: 0;
+      padding-left: 0;
       left: 0;
       display: none;
       background: white;
@@ -80,12 +79,26 @@ a {
  ul li ul li a { transition: all 0.5s ease; }
 
 .titulo{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background:red ;
   text-align: center;
   border-radius: 5px;
-  color: green;
-  border: blue solid 1px;
+  color: rgb(255, 255, 255);
+  border: rgb(3, 3, 3) solid 3px;
   padding: 10px 100px 10px 100px;
 }
+.home img{
+  width: 90vw;
+  height: 30vh;
+}
+.homecontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
 .btnconfig{
   padding-top: 10px;
   padding-bottom: 10px;
@@ -109,13 +122,23 @@ text-align: center;
 
 .form{ 
   width: 20vh;
-  justify-content:center;
-  padding: 20px;
-  
-
-  
+  padding: 3vw;
   border: 1px dashed black;
   
+}
+
+.homecontainer{
+  justify-content: space-evenly;
+  border: rgb(244, 2, 2) dotted 5px;
+  padding: 10px;
+}
+
+.newsbox{
+  margin-bottom: 1vh;
+  align-items: center;
+  border: black dotted 1px;
+  padding: 10px;
+  width: 30vw;
 }
 
 label {
@@ -124,6 +147,6 @@ label {
 }
 
 .foot{
-  border:1px  chocolate solid;
+  border:3px  chocolate solid;
 }
 
