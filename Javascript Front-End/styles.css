@@ -1,82 +1,16 @@
-nav {
-&.primary-navigation {
-    display: block;
-    padding:  0 0 0;  
-    text-align: center;
-    font-size: 16px;
-  
-    ul li {
-      list-style: none;
-      margin: 0 auto;
-      border-left: 2px solid #64e73c;
-      display: inline-block;
-      padding: 0 30px;
-      position: relative;
-      text-decoration: none;
-      text-align: center;
-      font-family: arvo;
-    }
-
-    li a {
-      color: black;
-    }
-
-    li a:hover {
-      color: #3ca0e7;
-    }
-
-    li:hover {
-      cursor: pointer;
-    }
-
-    ul li ul {
-      visibility: hidden;
-      opacity: 0;
-      position: absolute;
-      padding-left: 0;
-      left: 0;
-      display: none;
-      background: white;
-    }
-
-    ul li:hover > ul,
-    ul li ul:hover {
-      visibility: visible;
-      opacity: 1;
-      display: block;
-      min-width: 250px;
-      text-align: left;
-      padding-top: 20px;
-      box-shadow: 0px 3px 5px -1px #ccc;
-    }
-
-    ul li ul li {
-      clear: both;
-      width: 100%;
-      text-align: left;
-      margin-bottom: 20px;
-      border-style: none;
-    }
-
-    ul li ul li a:hover {
-      padding-left: 10px;
-      border-left: 2px solid #3ca0e7;
-      transition: all 0.3s ease;
-    }
-  }
+.nave{
+  border-radius: 10px;
+  background-color: #ec7d7d;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
 }
-
-a {
-
-    text-decoration: none;
-
-    &:hover {
-        color: #3CA0E7;
-    }
- 
+.nave a{
+  color: black;
+  font-size:large;
+  text-decoration:none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
- ul li ul li a { transition: all 0.5s ease; }
 
 .titulo{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -87,30 +21,37 @@ a {
   border: rgb(3, 3, 3) solid 3px;
   padding: 10px 100px 10px 100px;
 }
+.home{
+  width: 90%;
+  height: 100%;
+}
 .home img{
-  width: 90vw;
+  width: 100vw;
   height: 30vh;
 }
-.homecontainer{
+
+h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:larger;
+  
+}
+
+.main{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
-
-
-.btnconfig{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-  border: #25cfdb solid 1px;
-
+.newscontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 80vw;
 }
-
-.times{
-border-radius: 1px;
-border: #db2525 solid 2px;  
-text-align: center;
+.aside{
+  border: black dotted 1px;
+  justify-content: flex-end;
+  width: 10%;
+  padding: 1vw;
+ 
 }
 
 .container{
@@ -127,20 +68,27 @@ text-align: center;
   
 }
 
-.homecontainer{
-  justify-content: space-evenly;
-  border: rgb(244, 2, 2) dotted 5px;
+.newscontainer{
+  height: 100%;
+  justify-content: space-around;
   padding: 10px;
 }
 
 .newsbox{
   margin-bottom: 1vh;
-  align-items: center;
-  border: black dotted 1px;
+  justify-content: center;
+ /* border: black dotted 1px; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   padding: 10px;
-  width: 30vw;
+  width: 200px;
 }
-
+.newsbox img{
+  width: 100%;
+}
+.newsbox h1{
+  color: #a32525;
+}
 label {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #db2525;
