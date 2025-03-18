@@ -23,16 +23,34 @@
     <form>
         <label> Nome</label>
         <input type="text" name="Nome" id="fname" placeholder="Nome e Sobrenome">
-        <label> Telefone</label>
-        <input type="text" name="Telefone" id="phone" placeholder="DDD + Telefone">
+        <label class="phoneTitle"> Telefone</label>
+        <input type="text" name="Telefone" id="phone"  class="askTelephone" placeholder="DDD + Telefone">
         <input type="checkbox" name="celular" id="cellphone"> Celular
-        <input type="checkbox" name="celular" id="cellphone"> Fixo 
+        <input type="checkbox" name="celular" id="homephone"> Fixo 
         <label>Mensagem</label>
         <textarea placeholder="Sem Textão"></textarea>
         <input type="submit" name="submit" id="submeter">
     </form>
 </div>
 </div> 
+<script>
+    let nome = window.document.getElementsByTagName('label') [0];
+    let userFirstName = window.document.getElementById('fname'); 
+    let barra = window.document.getElementsByTagName('label')[2]; 
+   
+  //// ALTERAR INFORMAÇÕES PELO JS //// 
+     barra.style.color = 'green';
+     nome.style.color = 'blue';
+     userFirstName.style.border = 'dotted green 2px';
+     
+
+
+
+    
+
+</script>
+ 
+
 
   
 </body>
