@@ -1,297 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <script src="script.js" type="text/javascript" defer></script>
-    <title>Projeto 1</title>
-  </head>
 
-  <body>
-    <header class="home">
-      <img
-        src="https://logos-world.net/wp-content/uploads/2024/10/Daily-Bugle-Logo.png"
-        alt=" Daily bungle logo"
-      />
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <script src="script.js" type="text/javascript" defer></script>
+  <title>Projeto 1</title>
+</head>
 
-    <nav role="navigation" class="nave">
-      <a href="index.html">Home</a>
-      <a href="gallery.html">Galeria</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="main">
-      <aside class="aside-left">
-        <form>
-        <p><h1>SOMA DE VALORES</h1>
-          <input id="n1" type="number" placeholder="Digite o 1º número" > +
-          <input id="n2" type="number" placeholder="Digite o 2º número" >
+<body>
+  <header class="home">
+    <img src="https://logos-world.net/wp-content/uploads/2024/10/Daily-Bugle-Logo.png" alt=" Daily bungle logo" />
+  </header>
+
+  <nav role="navigation" class="nave">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Galeria</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="main">
+    <aside class="aside-left">
+      <form class="formNotas">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque pariatur unde earum, impedit,
+          exercitationem minima animi nulla alias atque aperiam maiores ad at officiis in expedita tenetur. Pariatur,
+          repudiandae laborum.
+      </form>
+      <div class="formNotas">
+
+      </div>
+    </aside>
+    <div class="newscontainer">
+      <div class="newsbox" id="01">
+        <form class="formNotas">
+          <p>
+          <h1>SOMA DE VALORES</h1>
+          <input id="n1" type="number" placeholder="Digite o 1º número">
+          <input id="n2" type="number" placeholder="Digite o 2º número">
           <input id="soma" type="button" onclick="somar()" value="Somar">
           <h4 id="resp1"></h4>
           <h4 id="resp2"></h4>
           <input id="soma" type="reset" value="Limpar" />
         </form>
-
-          
-
-        <form>
-          <p><h1>CAIXA</h1>
-            
-            <input id="produto1" type="number" placeholder="Valor Unitário" > 
-            <input id="unidades" type="number" placeholder="Unidades" >
-            <input id="dinheiro" type="number" placeholder="Dinheiro Recebido" >
-            <input id="soma" type="button" onclick="caixa()" value="Total" >
-            <h4 id="resultado1"></h4>
-            <h4 id="resultado2"></h4>
-            <h4 id="resultado3"></h4>
-            <input id="soma" type="reset" value="Limpar" />
-        </p>
-      </form>
-      </aside>
-      <div class="newscontainer">
-        <div class="newsbox" id="01"  >
-          <h1>NEWS</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            consectetur ratione id, necessitatibus nihil perferendis! Officia,
-            maiores iusto asperiores repudiandae quam voluptatibus temporibus
-            qui recusandae, placeat ipsa minima porro debitis!
-          </p>
-        </div>
-        <div class="newsbox" onmouseenter="mudarCorIn1()" onmouseout="mudarCorOut1()" onclick="clickou()">
-          <h1>WORLD</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            neque molestiae quis animi nostrum dignissimos distinctio illum,
-            pariatur totam optio a obcaecati cumque et officia illo blanditiis.
-            Quaerat, dolorum ut?
-          </p>
-        </div>
-
-        <div class="newsbox" onmouseenter="mudarCorIn2()" onmouseout="mudarCorOut2()"  onclick="clickou()">
-          <h1>HEROS</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consequatur, sequi eum? Perferendis distinctio quia incidunt quod.
-            Debitis voluptatibus dolorum a dicta, corporis ex, aliquid molestiae
-            natus harum voluptatem nostrum eveniet.
-          </p>
-        </div>
-        <div class="newsbox" onmouseenter="mudarCorIn3()" onmouseout="mudarCorOut3()"  onclick="clickou()">
-          <h1>NEW YORK</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            consectetur ratione id, necessitatibus nihil perferendis! Officia,
-            maiores iusto asperiores repudiandae quam voluptatibus temporibus
-            qui recusandae, placeat ipsa minima porro debitis!
-          </p>
-        </div>
-
-        <div class="newsbox" onmouseenter="mudarCorIn4()" onmouseout="mudarCorOut4()"  onclick="clickou()")>
-          <h1>JOBS</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            consectetur ratione id, necessitatibus nihil perferendis! Officia,
-            maiores iusto asperiores repudiandae quam voluptatibus temporibus
-            qui recusandae, placeat ipsa minima porro debitis!
-          </p>
-        </div>
-
-        <div class="newsbox" onmouseenter="mudarCorIn5()" onmouseout="mudarCorOut5()"  onclick="clickou()")>
-          <h1>USA</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            consectetur ratione id, necessitatibus nihil perferendis! Officia,
-            maiores iusto asperiores repudiandae quam voluptatibus temporibus
-            qui recusandae, placeat ipsa minima porro debitis!
-          </p>
-        </div>
-
-        <div class="newsbox" onmouseenter="mudarCorIn6()" onmouseout="mudarCorOut6()"  onclick="clickou()">
-          <h1>MONEY</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            consectetur ratione id, necessitatibus nihil perferendis! Officia,
-            maiores iusto asperiores repudiandae quam voluptatibus temporibus
-            qui recusandae, placeat ipsa minima porro debitis!
-          </p>
-        </div>
-
-        <div class="newsbox" onmouseenter="mudarCorIn7()" onmouseout="mudarCorOut7()"  onclick="clickou()">
-          <h1>EDUCATION</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            consectetur ratione id, necessitatibus nihil perferendis! Officia,
-            maiores iusto asperiores repudiandae quam voluptatibus temporibus
-            qui recusandae, placeat ipsa minima porro debitis!
-          </p>
-        </div>
-
-        <div class="newsbox" onmouseenter="mudarCorIn8()" onmouseout="mudarCorOut8()" onclick="clickou()">
-          <h1>MOVIES</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            consectetur ratione id, necessitatibus nihil perferendis! Officia,
-            maiores iusto asperiores repudiandae quam voluptatibus temporibus
-            qui recusandae, placeat ipsa minima porro debitis!
-          </p>
-        </div>
       </div>
-      <aside class="aside-right">
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ut
-          dolorum eveniet repellendus aliquam itaque voluptatem voluptatum
-          praesentium, iste pariatur id tempore dolor, fugiat quod sunt
-          obcaecati aut consectetur accusamus!
-        </h1>
-      </aside>
+      <div class="newsbox" onmouseenter="mudarCorIn1()" onmouseout="mudarCorOut1()">
+        <form class="formNotas">
+          <p>
+          <h1>CAIXA</h1>
+          <input id="produto1" type="number" placeholder="Valor Unitário">
+          <input id="unidades" type="number" placeholder="Unidades">
+          <input id="dinheiro" type="number" placeholder="Dinheiro Recebido">
+          <input id="somaNotas" type="button" onclick="caixa()" value="Total">
+          <h4 id="resultado1"></h4>
+          <h4 id="resultado2"></h4>
+          <h4 id="resultado3"></h4>
+          <input id="soma" type="reset" value="Limpar" />
+          </p>
+      </div>
+
+      <div class="newsbox" onmouseenter="mudarCorIn2()" onmouseout="mudarCorOut2()">
+        <form>
+          <p>
+          <h1>NOTAS</h1>
+
+          <input id="nota1" type="number" placeholder="Nota 1º Semestre">
+          <input id="nota2" type="number" placeholder="Nota 2º Semestre">
+          <input id="soma" type="button" onclick="somarNotas()" value="Total">
+          <h4 id="notaTotal"></h4>
+          <h4 id="resultadoAno"></h4>
+
+          <input id="soma" type="reset" value="Limpar" />
+          </p>
+        </form>
+      </div>
+      
+      <div class="newsbox" onmouseenter="mudarCorIn3()" onmouseout="mudarCorOut3()">
+      <form>
+        <h1>MENOR DE TRÊS</h1>
+          <input id="nn1" type="number" placeholder="Primeiro Número">
+          <input id="nn2" type="number" placeholder="Segundo Número">
+          <input id="nn3" type="number" placeholder="Terceiro Número">
+          <input id="soma" type="button" onclick="menorDeTres()" value="Total">
+          <h4 id="menorNumero"></h4>
+          <input id="soma" type="reset" value="Limpar" />
+        </form>
+      </div>
+
+      <div class="newsbox" onmouseenter="mudarCorIn4()" onmouseout="mudarCorOut4()">
+        <form>
+          <h1>OPERADORA TELEFONIA</h1>
+            <input id="minutos" type="number" placeholder="Minutos de Ligação">
+            <input id="soma" type="button" onclick="minutosValor()" value="Total">
+            <h4 id="valorAPagar"></h4>
+            <input id="soma" type="reset" value="Limpar" />
+          </form>
+      </div>
+
+      <div class="newsbox" onmouseenter="mudarCorIn5()" onmouseout="mudarCorOut5()">
+        <h1>USA</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          consectetur ratione id, necessitatibus nihil perferendis! Officia,
+          maiores iusto asperiores repudiandae quam voluptatibus temporibus
+          qui recusandae, placeat ipsa minima porro debitis!
+        </p>
+      </div>
+
+      <div class="newsbox" onmouseenter="mudarCorIn6()" onmouseout="mudarCorOut6()">
+        <h1>MONEY</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          consectetur ratione id, necessitatibus nihil perferendis! Officia,
+          maiores iusto asperiores repudiandae quam voluptatibus temporibus
+          qui recusandae, placeat ipsa minima porro debitis!
+        </p>
+      </div>
+
+      <div class="newsbox" onmouseenter="mudarCorIn7()" onmouseout="mudarCorOut7()">
+        <h1>EDUCATION</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          consectetur ratione id, necessitatibus nihil perferendis! Officia,
+          maiores iusto asperiores repudiandae quam voluptatibus temporibus
+          qui recusandae, placeat ipsa minima porro debitis!
+        </p>
+      </div>
+
+      <div class="newsbox" onmouseenter="mudarCorIn8()" onmouseout="mudarCorOut8()">
+        <h1>MOVIES</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          consectetur ratione id, necessitatibus nihil perferendis! Officia,
+          maiores iusto asperiores repudiandae quam voluptatibus temporibus
+          qui recusandae, placeat ipsa minima porro debitis!
+        </p>
+      </div>
     </div>
+    <aside class="aside-right">
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ut
+        dolorum eveniet repellendus aliquam itaque voluptatem voluptatum
+        praesentium, iste pariatur id tempore dolor, fugiat quod sunt
+        obcaecati aut consectetur accusamus!
+      </h1>
+    </aside>
+  </div>
 
-    <script>
-     /* let userSeconds = prompt("Quantos Segundos?? ");
-      let altura = Number.parseFloat(prompt("Qual sua altura? "));
-      let imc = peso / (altura * altura);
+  <script>
+    /* let userSeconds = prompt("Quantos Segundos?? ");
+     let altura = Number.parseFloat(prompt("Qual sua altura? "));
+     let imc = peso / (altura * altura);
 
-      imc = imc.toFixed(2);
-      let vai = imc >= 2 ? "Ta bem" : "Vai morrer";
+     imc = imc.toFixed(2);
+     let vai = imc >= 2 ? "Ta bem" : "Vai morrer";
 
-      let name = prompt("Qual seu nome??");
-      let nameSize = name.length;
-      let bigName = name.toUpperCase();
-      let smallName = name.toLowerCase();
-    */
-     /*
-      let horas = userSeconds / 3600 | 0;
-      let minutos = ((userSeconds -(horas*3600)) / 60) |0 ;
-      let segundos = userSeconds - (horas*3600) - (minutos*60);
-      
-      window.document.write(`Voce colocou ${userSeconds} , isso corresponde á  ${horas} horas, ${minutos} minutos e ${segundos} segundos`);
+     let name = prompt("Qual seu nome??");
+     let nameSize = name.length;
+     let bigName = name.toUpperCase();
+     let smallName = name.toLowerCase();
+   */
+    /*
+     let horas = userSeconds / 3600 | 0;
+     let minutos = ((userSeconds -(horas*3600)) / 60) |0 ;
+     let segundos = userSeconds - (horas*3600) - (minutos*60);
+     
+     window.document.write(`Voce colocou ${userSeconds} , isso corresponde á  ${horas} horas, ${minutos} minutos e ${segundos} segundos`);
 
-      */
+     */
 
-      function somar() {
-        let n1 = window.document.getElementById('n1');
-        let n2 = window.document.getElementById('n2');
-        let resposta1 = window.document.getElementById('resp1');
-        let resposta2 = window.document.getElementById('resp2');
-        let numero1 = Number(n1.value);
-        let numero2 = Number(n2.value);
-        let somatoria = numero1 + numero2;
-
-        resposta1.innerText = `A Soma entre ${numero1} e ${numero2} é ${somatoria} :D`
-      };
-
-      let fundo0 = window.document.getElementById('01');
-      let fundo1 = window.document.getElementsByClassName('newsbox')[1];
-      let fundo2 = window.document.getElementsByClassName('newsbox')[2];
-      let fundo3 = window.document.getElementsByClassName('newsbox')[3];
-      let fundo4 = window.document.getElementsByClassName('newsbox')[4];
-      let fundo5 = window.document.getElementsByClassName('newsbox')[5];
-      let fundo6 = window.document.getElementsByClassName('newsbox')[6];
-      let fundo7 = window.document.getElementsByClassName('newsbox')[7];
-      let fundo8 = window.document.getElementsByClassName('newsbox')[8];
-      
-      fundo0.addEventListener('click', clickou);
-      fundo0.addEventListener('mouseenter', mudarCorIn0);
-      fundo0.addEventListener('mouseout', mudarCorOut0);
-
-
-      function clickou(){
-        fundo0.innerText = 'Clicou Aqui !'
-        fundo1.innerText = 'Clicou Aqui !'
-        fundo2.innerText = 'Clicou Aqui !'
-        fundo3.innerText = 'Clicou Aqui !'
-        fundo4.innerText = 'Clicou Aqui !'
-        fundo5.innerText = 'Clicou Aqui !'
-        fundo6.innerText = 'Clicou Aqui !'
-        fundo7.innerText = 'Clicou Aqui !'
-        fundo8.innerText = 'Clicou Aqui !'
-        fundo0.style.backgroundColor  = '#90EE90';
-        fundo1.style.backgroundColor  = '#90EE90';
-        fundo2.style.backgroundColor  = '#90EE90';
-        fundo3.style.backgroundColor  = '#90EE90';
-        fundo4.style.backgroundColor  = '#90EE90';
-        fundo5.style.backgroundColor  = '#90EE90';
-        fundo6.style.backgroundColor  = '#90EE90';
-        fundo7.style.backgroundColor  = '#90EE90';
-        fundo8.style.backgroundColor  = '#90EE90';
-
-
-      }
-
-      function mudarCorIn0(){
-        fundo0.style.backgroundColor  = '#F08080';
-      };
-
-      function mudarCorOut0() {
-        fundo0.style.backgroundColor  = 'white'; 
-      };
-
-      function mudarCorIn1(){
-        fundo1.style.backgroundColor  = '#F08080';
-      };
-
-      function mudarCorOut1() {
-        fundo1.style.backgroundColor  = 'white'; 
-      };
-
-
-      function mudarCorIn2(){
-        fundo2.style.backgroundColor  = '#F08080';
-      };
-
-      function mudarCorOut2() {
-        fundo2.style.backgroundColor  = 'white'; 
-      };
-
-      function mudarCorIn3(){
-        fundo3.style.backgroundColor  = '#F08080';
-      };
-
-      function mudarCorOut3() {
-        fundo3.style.backgroundColor  = 'white'; 
-      };
-
-      function mudarCorIn4(){
-        fundo4.style.backgroundColor  = '#F08080';
-      };
-
-      function mudarCorOut4() {
-        fundo4.style.backgroundColor  = 'white'; 
-      };
-
-      function mudarCorIn5(){
-        fundo5.style.backgroundColor  = '#F08080';
-      };
-
-      function mudarCorOut5() {
-        fundo5.style.backgroundColor  = 'white'; 
-      };
-      function mudarCorIn6(){
-        fundo6.style.backgroundColor  = '#F08080';
-      };
-
-      function mudarCorOut6() {
-        fundo6.style.backgroundColor  = 'white'; 
-      };
-
-      function mudarCorIn7(){
-        fundo7.style.backgroundColor  = '#F08080';
-      };
-
-      function mudarCorOut7() {
-        fundo7.style.backgroundColor  = 'white'; 
-      };
-      function mudarCorIn8(){
-        fundo8.style.backgroundColor  = '#F08080';
-      };
-
-      function mudarCorOut8() {
-        fundo8.style.backgroundColor  = 'white'; 
-      };
+    
 
 
 
@@ -307,8 +187,8 @@
 
 
 
+  </script>
+</body>
+<footer class="foot">FOOTER</footer>
 
-    </script>
-  </body>
-  <footer class="foot">FOOTER</footer>
 </html>

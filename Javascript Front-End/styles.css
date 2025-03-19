@@ -51,19 +51,21 @@ h1 {
 }
 .aside-left {
   border: black dotted 1px;
-  justify-content: flex-end;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 10%;
   padding: 1vw;
+  display: flex;
+  flex-direction: column;
 }
-.aside-left h4 {
-  
+.aside-left h4,h1{
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(240, 231, 231);
 }
 .aside-left input{
   width: 100%;
 }
+
 #soma{
   margin-top: 10%;
   width: 50%;
@@ -145,3 +147,6 @@ label {
 .foot {
   border: 3px chocolate solid;
 }
+
+
+
