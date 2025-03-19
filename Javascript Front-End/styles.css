@@ -1,108 +1,147 @@
-.nave{
+
+.nave {
   border-radius: 10px;
   background-color: #ec7d7d;
   display: flex;
   justify-content: space-evenly;
   padding: 5px;
 }
-.nave a{
+.nave a {
   color: black;
-  font-size:large;
-  text-decoration:none;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.titulo{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background:red ;
+.titulo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: red;
   text-align: center;
   border-radius: 5px;
   color: rgb(255, 255, 255);
   border: rgb(3, 3, 3) solid 3px;
   padding: 10px 100px 10px 100px;
 }
-.home{
+.home {
   width: 90%;
   height: 100%;
 }
-.home img{
+.home img {
   width: 100vw;
   height: 30vh;
-  
 }
 
-h1{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size:larger;
-  
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
 }
 
-.main{
+.main {
   display: flex;
   justify-content: space-around;
 }
-.newscontainer{
+.newscontainer {
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   width: 80vw;
-}
-.aside{
-  border: black dotted 1px;
-  justify-content: flex-end;
-  width: 10%;
-  padding: 1vw;
-}
-.aside-right{
-  border: rgb(243, 5, 5) dotted 1px;
-  justify-content: center;
-  width: 10%;
-  padding: 1vw;
- 
-}
-
-
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%
-}
-
-.form{ 
-  width: 20vh;
-  padding: 3vw;
-  border: 1px dashed black;
-  
-}
-
-.newscontainer{
   height: 100%;
   justify-content: space-around;
   padding: 10px;
 }
+.aside-left {
+  border: black dotted 1px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 10%;
+  padding: 1vw;
+}
+.aside-left h4 {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 231, 231);
+}
+.aside-left input{
+  width: 100%;
+}
+#soma{
+  margin-top: 10%;
+  width: 50%;
+}
 
-.newsbox{
+.aside-right {
+  border: rgb(231, 77, 77) dotted 1px;
+  justify-content: center;
+  width: 10%;
+  padding: 1vw;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.form {
+  width: 20vh;
+  padding: 3vw;
+  border: 1px dashed black;
+}
+
+.newsbox {
   margin-bottom: 1vh;
   justify-content: center;
-  border: black dotted 1px; 
+  border: black dotted 1px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   padding: 10px;
   width: 200px;
 }
-.newsbox img{
-  width: 100%;
-}
-.newsbox h1{
+.newsbox h1 {
   color: #a32525;
 }
+
+.gallery{
+  display: flex;
+  justify-content: space-around;
+}
+.homecontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80vw;
+  height: 100%;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.picsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-around;
+  padding: 10px;
+  flex-direction: row;
+}
+.picsBox {
+  margin-bottom: 1vh;
+  justify-content: center;
+  border: black dotted 1px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  padding: 10px;
+  width: 200px;
+}
+.picsBox img {
+  width: 100%;
+}
+
 label {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #db2525;
 }
 
-.foot{
-  border:3px  chocolate solid;
+.foot {
+  border: 3px chocolate solid;
 }
-

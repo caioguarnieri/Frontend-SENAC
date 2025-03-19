@@ -1,89 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <title>Galeria</title>
-  </head>
-  <body>
-    <nav>
-      <header>
-        <h1 class="titulo">Galeria</h1>
-        <nav role="navigation" class="nave">
-      
-          <a href="index.html">Home</a>
-          <a href="gallery.html">Galeria</a>
-          <a href="contact.html">Contact</a>
-        
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <title>Galeria</title>
+</head>
+
+<body>
+  <nav>
+    <header>
+      <h1 class="titulo">Galeria</h1>
+      <nav role="navigation" class="nave">
+
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="contact.html">Contact</a>
+
       </nav>
-
-  
-</div>
+      </div>
     </header>
-    </nav>
-  
-  
+  </nav>
 
-    <div class="gallery">
 
-      <div class="homecontainer">
-        <div class="newsbox">  
+
+  <div class="gallery">
+    <aside class="aside-left">
+      <p>
+      <h1>SOMA DE VALORES</h1>
+      <input id="n1" type="number" placeholder="Digite o 1º número"> +
+      <input id="n2" type="number" placeholder="Digite o 2º número">
+      <input id="soma" type="button" onmouseout="somar()" value="Somar">
+      <h4 id="resp1"></h4>
+      <h4 id="resp2"></h4>
+      </p>
+    </aside>
+    <div class="homecontainer">
+      <div class="picsContainer">
+        <div class="picsBox">
           <h1>NEWS</h1>
           <img src="https://www.shutterstock.com/image-vector/tv-news-studio-broadcaster-breaking-260nw-723691252.jpg">
           </img>
-          </div>
-        <div class="newsbox" >
+        </div>
+        <div class="picsBox">
           <h1>WORLD</h1>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZGawpnC9Q2QACOy43qZpruIocB7Z38PRFQg&s">
-        </img>
-        </div>
-    
-        <div class="newsbox">
-          <h1>HEROS</h1>
-          <img src="https://miro.medium.com/v2/resize:fit:1200/1*aVo-DDwyEcVO0jHSBplmeA.png">
-        </img>
-      </div>
-      <div class="newsbox">  
-        <h1>NEW YORK</h1>
-        <img src="https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg">
           </img>
         </div>
-    
-        <div class="newsbox">  
+
+        <div class="picsBox">
+          <h1>HEROS</h1>
+          <img src="https://miro.medium.com/v2/resize:fit:1200/1*aVo-DDwyEcVO0jHSBplmeA.png">
+          </img>
+        </div>
+        <div class="picsBox">
+          <h1>NEW YORK</h1>
+          <img src="https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg">
+          </img>
+        </div>
+
+        <div class="picsBox">
           <h1>JOBS</h1>
           <img src="https://about.fb.com/br/wp-content/uploads/sites/3/2018/03/jobs-1.png">
           </img>
-          </div>
-    
-          <div class="newsbox">  
-            <h1>USA</h1>
-            <img src="https://play-lh.googleusercontent.com/LMtMfR3I1RMtcRkMVm9x8hm_fb5ijMuxjbd7pfM2dz6QED-9QIzIUEW6sQo7ayr4QuY">
+        </div>
+
+        <div class="picsBox">
+          <h1>USA</h1>
+          <img
+            src="https://play-lh.googleusercontent.com/LMtMfR3I1RMtcRkMVm9x8hm_fb5ijMuxjbd7pfM2dz6QED-9QIzIUEW6sQo7ayr4QuY">
           </img>
-            </div>
-    
-            <div class="newsbox">  
-              <h1>MONEY</h1>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZfl4mA2GwB66-NFdWYBFbzWcfAhCEdDliPg&s">
+        </div>
+
+        <div class="picsBox">
+          <h1>MONEY</h1>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZfl4mA2GwB66-NFdWYBFbzWcfAhCEdDliPg&s">
           </img>
-              </div>
-    
-              <div class="newsbox">  
-                <h1>EDUCATION</h1>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaeCuPWjBxzHmz7z-pFO19Ahby2pkn6Qfh7w&s">
+        </div>
+
+        <div class="picsBox">
+          <h1>EDUCATION</h1>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaeCuPWjBxzHmz7z-pFO19Ahby2pkn6Qfh7w&s">
           </img>
-                </div>
-    
-                <div class="newsbox">  
-                  <h1>MOVIES</h1>
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6h8Sh2zgH-3I-G3-z-88dTuil5ERdGimQqg&s">
+        </div>
+
+        <div class="picsBox">
+          <h1>MOVIES</h1>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6h8Sh2zgH-3I-G3-z-88dTuil5ERdGimQqg&s">
           </img>
-                  </div>
-    
-    
-    
+        </div>
+      </div>
     </div>
-      
-    </div>
-  </body>
+    <aside class="aside-right">
+      <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ut
+      dolorum eveniet repellendus aliquam itaque voluptatem voluptatum
+      praesentium, iste pariatur id tempore dolor, fugiat quod sunt
+      obcaecati aut consectetur accusamus!
+      </h1>
+    </aside>
+  </div>
+  
+  </div>
+</body>
+<footer class="foot">FOOTER</footer>
 </html>
