@@ -59,6 +59,7 @@
           <h4 id="resultado3"></h4>
           <input id="soma" type="reset" value="Limpar" />
           </p>
+        </form>
       </div>
 
       <div class="newsbox" onmouseenter="mudarCorIn2()" onmouseout="mudarCorOut2()">
@@ -100,27 +101,58 @@
       </div>
 
       <div class="newsbox" onmouseenter="mudarCorIn5()" onmouseout="mudarCorOut5()">
-        <h1>USA</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          consectetur ratione id, necessitatibus nihil perferendis! Officia,
-          maiores iusto asperiores repudiandae quam voluptatibus temporibus
-          qui recusandae, placeat ipsa minima porro debitis!
-        </p>
+        <form>
+          <h1>MEDIDOR DE GLICOSE</h1>
+            <input id="glicoseValue" type="number" placeholder="Digite o valor da glicose">
+            <input id="soma" type="button" onclick="glicose()" value="Resultado">
+            <h4 id="glicoseTotal"></h4>
+            <input id="soma" type="reset" value="Limpar" />
+          </form>
       </div>
 
       <div class="newsbox" onmouseenter="mudarCorIn6()" onmouseout="mudarCorOut6()">
-        <h1>MONEY</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          consectetur ratione id, necessitatibus nihil perferendis! Officia,
-          maiores iusto asperiores repudiandae quam voluptatibus temporibus
-          qui recusandae, placeat ipsa minima porro debitis!
-        </p>
+        <form>
+          <h1>DARDO</h1>
+            <input id="distancia1" type="number" placeholder="Distância 1">
+            <input id="distancia2" type="number" placeholder="Distância 2">
+            <input id="distancia3" type="number" placeholder="Distância 3">
+            <input id="soma" type="button" onclick="maiorDistancia()" value="Total">
+            <h4 id="maiorDistanciaFinal"></h4>
+            <input id="soma" type="reset" value="Limpar" />
+          </form>
       </div>
 
       <div class="newsbox" onmouseenter="mudarCorIn7()" onmouseout="mudarCorOut7()">
-        <h1>EDUCATION</h1>
+        <form>
+          <h1>TEMPERATURA</h1>
+          <h4>Qual a temperatura da escala?</h4>
+            <select id="selecao">
+              <option value="0">C (Celcius)</option>
+              <option value="1">F (Fahrenheit)</option>
+            <input id="temperatura" type="number" placeholder="Temperatura">
+            <input id="soma" type="button" onclick="converterTemp()" value="Converter">
+            <h4 id="tempFinal"></h4>
+            <input id="soma" type="reset" value="Limpar" />
+          </form>
+      </div>
+
+      <div class="newsbox" onmouseenter="mudarCorIn8()" onmouseout="mudarCorOut8()">
+        <form class="formNotas">
+          <p>
+          <h1>Produtos por Código</h1>
+          <input id="produtoCodigo" type="number" placeholder="Código do Produto">
+          <input id="produtoQuantidade" type="number" placeholder="Unidades">
+          <input id="calcularTotal" type="button" onclick="caixaCodigo()" value="Total">
+          <h4 id="valorUnitario"></h4>
+          <h4 id="valorFinal"></h4>
+          
+          <input id="soma" type="reset" value="Limpar" />
+          </p>
+        </form>
+      </div>
+
+      <div class="newsbox" onmouseenter="mudarCorIn8()" onmouseout="mudarCorOut8()">
+        <h1>MOVIES</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           consectetur ratione id, necessitatibus nihil perferendis! Officia,
@@ -139,6 +171,8 @@
         </p>
       </div>
     </div>
+
+
     <aside class="aside-right">
       <h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ut

@@ -209,3 +209,85 @@ function minutosValor(){
         resultadoFranquia.innerText = `O valor a pagar é ${valorFranquia} reais`
     }
 }
+
+function glicose(){
+    let glicoseValue = Number(window.document.getElementById('glicoseValue').value);
+    let normal = 100;
+    let elevado = 140;
+    let resultadoGlicose = window.document.getElementById('glicoseTotal');
+
+    if (glicoseValue <= normal){
+        resultadoGlicose.innerText = `Resultado: Normal`;
+        resultadoGlicose.style.backgroundColor = '#90ee90';
+} else if (glicoseValue <= elevado ){
+    resultadoGlicose.innerText = `Resultado: Elevado`;
+    resultadoGlicose.style.backgroundColor = '#ffff00';
+   }  else if (glicoseValue > 140 ){
+    resultadoGlicose.innerText = `Resultado: Diabetes`;
+    resultadoGlicose.style.backgroundColor = '#f1807e';
+   }
+}
+
+function maiorDistancia() {
+    let dis1 = Number(window.document.getElementById("distancia1").value);
+    let dis2 = Number(window.document.getElementById("distancia2").value);
+    let dis3 = Number(window.document.getElementById("distancia3").value);
+    /// ESSE SERIA O MAIS CURTO
+    ///   let menordeTodos = Math.min(numero01, numero02, numero03);
+    let maiorDeTodos = " ";
+    let resultadoDistancia = window.document.getElementById("maiorDistanciaFinal");
+  
+    if (dis1 >= dis2 && dis3) {
+      let maiorDeTodos = dis1;
+      resultadoDistancia.innerText = `A maior distância é : ${maiorDeTodos}`;
+    }
+    if (dis2 >= dis1 && dis3) {
+      let maiorDeTodos = dis2;
+      resultadoDistancia.innerText = `A maior distância é : ${maiorDeTodos}`;
+    }
+    if (dis3 >= dis1 && dis2) {
+      let maiorDeTodos = dis3;
+      resultadoDistancia.innerText = `A maior distância é : ${maiorDeTodos}`;
+    }
+  }
+
+  function converterTemp(){
+      let selecaoTemperatura = Number(window.document.getElementById('selecao').value);
+      let userTemp = Number(window.document.getElementById('temperatura').value);
+      
+      let cTof = userTemp * 1.8 + 32 ;
+      let fToC = (userTemp - 32) / 1.8;
+      let tempResult = window.document.getElementById('tempFinal');
+      cTof = cTof.toFixed(2);
+      fToC = fToC.toFixed(2);
+      
+      
+      switch (selecaoTemperatura){
+          case 0:
+              tempResult.innerText = `A temperatudo em Fahrenheit é ${cTof}`;
+              break
+            case 1: 
+            tempResult.innerText = `A temperatudo em Celcius é ${fToC}`;
+              break
+      }
+  }
+
+  function caixaCodigo() {
+      let productId = Number(window.document.getElementById('produtoCodigo').value);
+      let unitPrice = '';
+      let totalFinal = produtoQuantidade * unitPrice;
+      let valorUnidade = window.document.getElementById('valorUnitario');
+      let valorFinal = window.document.getElementById('valorFinal');
+
+      switch (productId){
+        case 0:
+            unitPrice = 2
+            valorUnidade.innerText = `O valor unitário é ${unitPrice}`;
+            valorFinal.innerText = `O valor final é ${totalFinal}`;
+            break
+          case 1:
+          unitPrice = 3
+          valorUnidade.innerText = `O valor unitário é ${unitPrice}`;
+          valorFinal.innerText = `O valor final é ${totalFinal}`;
+          break
+  }
