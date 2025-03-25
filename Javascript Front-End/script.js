@@ -109,28 +109,28 @@ function mudarCorIn8() {
   fundo8.style.backgroundColor = "#F08080";
 }
 
-function mudarCorOut8(){
+function mudarCorOut8() {
   fundo8.style.backgroundColor = "white";
 }
 function mudarCorIn9() {
   fundo8.style.backgroundColor = "#F08080";
 }
 
-function mudarCorOut9(){
+function mudarCorOut9() {
   fundo8.style.backgroundColor = "white";
 }
 function mudarCorIn10() {
   fundo8.style.backgroundColor = "#F08080";
 }
 
-function mudarCorOut10(){
+function mudarCorOut10() {
   fundo8.style.backgroundColor = "white";
 }
 function mudarCorIn11() {
   fundo8.style.backgroundColor = "#F08080";
 }
 
-function mudarCorOut11(){
+function mudarCorOut11() {
   fundo8.style.backgroundColor = "white";
 }
 
@@ -138,7 +138,7 @@ function mudarCorIn12() {
   fundo8.style.backgroundColor = "#F08080";
 }
 
-function mudarCorOut12(){
+function mudarCorOut12() {
   fundo8.style.backgroundColor = "white";
 }
 
@@ -146,7 +146,7 @@ function mudarCorIn13() {
   fundo8.style.backgroundColor = "#F08080";
 }
 
-function mudarCorOut13(){
+function mudarCorOut13() {
   fundo8.style.backgroundColor = "white";
 }
 
@@ -154,7 +154,7 @@ function mudarCorIn14() {
   fundo8.style.backgroundColor = "#F08080";
 }
 
-function mudarCorOut14(){
+function mudarCorOut14() {
   fundo8.style.backgroundColor = "white";
 }
 
@@ -162,7 +162,7 @@ function mudarCorIn15() {
   fundo8.style.backgroundColor = "#F08080";
 }
 
-function mudarCorOut15(){
+function mudarCorOut15() {
   fundo8.style.backgroundColor = "white";
 }
 
@@ -170,7 +170,7 @@ function mudarCorIn16() {
   fundo8.style.backgroundColor = "#F08080";
 }
 
-function mudarCorOut16(){
+function mudarCorOut16() {
   fundo8.style.backgroundColor = "white";
 }
 
@@ -178,10 +178,9 @@ function mudarCorIn17() {
   fundo8.style.backgroundColor = "#F08080";
 }
 
-function mudarCorOut17(){
+function mudarCorOut17() {
   fundo8.style.backgroundColor = "white";
 }
-
 
 function caixa() {
   let produto = window.document.getElementById("produto1");
@@ -390,43 +389,48 @@ function sobeOuDesce() {
 function iniciarSenha() {
   let userSenha = window.prompt("DEFINA SUA SENHA AQUI");
   let tentativa;
-  
+
   do {
     tentativa = prompt("Tente acertar a Senha");
-    
+
     if (tentativa != userSenha) {
       alert("Senha Incorreta");
     } else {
       alert(`Senha Correta!!!`);
     }
-
-  } while(tentativa != userSenha);
+  } while (tentativa != userSenha);
 }
 
-function validarNotas(){
-    let nota01 = window.prompt('Insira a primeira nota');
-    let nota02 = window.prompt('Insira a 2ª nota');
-    let notaValida1 ='';
-    let notaValida2 = '';
-    let resultadoNota = validarNota1 + validarNota1 /2;
-   
-    while(nota01 >= 10  ){
-        notaValida1 = nota01;
-    }
+function validarNotas() {
+  let nota01 = window.prompt("Insira a primeira nota");
+  let nota02 = window.prompt("Insira a 2ª nota");
+  let notaValida1 = "";
+  let notaValida2 = "";
+  let resultadoNota = validarNota1 + validarNota1 / 2;
 
-    while(nota02 >= 10  ){
-      notaValida2 = nota02;
+  while (nota01 >= 10) {
+    notaValida1 = nota01;
   }
-    alert(`A nota 1 é ${nota01} e a nota 2 é ${nota02}Sua média é ${resultadoNota}`)
-  
+
+  while (nota02 >= 10) {
+    notaValida2 = nota02;
+  }
+  alert(
+    `A nota 1 é ${nota01} e a nota 2 é ${nota02}Sua média é ${resultadoNota}`
+  );
 }
 
-function userDados(){
-  let userIndex = Number (window.document.getElementById('numeroDeDados').value)
-  let userDados = window.document.getElementById('digiteDados').value;
+function userDados() {
+  let userIndex = window.prompt("Insira a quantidade de dados que voce deseja");
   let dados = [];
-  let addDados = dados.push(userDados)
-  
+  let data = 0;
+
+  for (let x = 0; x < userIndex; x++) {
+    data = window.prompt(` Insira o ${x + 1}º número`);
+    dados.push(data);
+    dados.sort();
+  }
+
+  window.alert(` Os dados da array são ${dados}`);
   console.log(dados);
-  
 }
