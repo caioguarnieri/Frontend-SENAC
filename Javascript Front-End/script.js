@@ -420,3 +420,13 @@ function validarNotas(){
     alert(`A nota 1 é ${nota01} e a nota 2 é ${nota02}Sua média é ${resultadoNota}`)
   
 }
+
+function userDados(){
+  let userIndex = Number (window.document.getElementById('numeroDeDados').value)
+  let userDados = window.document.getElementById('digiteDados').value;
+  let dados = [];
+  let addDados = dados.push(userDados)
+  
+  console.log(dados);
+  
+}
