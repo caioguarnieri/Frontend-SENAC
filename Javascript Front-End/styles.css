@@ -49,6 +49,7 @@ h1 {
   justify-content: space-around;
   padding: 10px;
 }
+
 .aside-left {
   border: black dotted 1px;
   justify-content: space-around;
@@ -104,6 +105,13 @@ h1 {
   color: #a32525;
 }
 
+.newsbox h4  {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.newsbox h5  {
+  font-family:Arial, Helvetica, sans-serif;
+}
 .gallery{
   display: flex;
   justify-content: space-around;

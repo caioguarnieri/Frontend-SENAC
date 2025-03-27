@@ -434,3 +434,39 @@ function userDados() {
   window.alert(` Os dados da array são ${dados}`);
   console.log(dados);
 }
+
+function somenteLetras() {
+  let letras = window.document.getElementById('digiteLetras').value;
+  let result = window.document.getElementById('applyCatch');
+
+  try{
+    let userLetras = letras.value;
+     if (typeof letras[x] === "number"){
+       throw new Error ('Erro: Não digite números');
+     }
+     let userLetters = userLetras;
+     result.innerText = `Você digitou = ${letras}`
+  }catch(c){
+    result.innerHTML = `<strong> VOCÊ NÃO PODE DIGITAR NÚMEROS </strong>`
+  }finally{
+    console.log('finally')
+  }
+} 
+
+
+function checkScreenSize() {
+  let screenHeight = screen.availHeight;
+  let screenWidth = screen.availWidth;
+  let sizeResult = window.document.getElementById('screenSizeResult');
+  let itsFullHd = '';
+  let screenResolution = '';
+  
+  if (screenWidth > 1850 && screenHeight > 1039){
+    screenResolution = 'Full HD'
+    itsFullHd = 'é'
+  }else {
+    screenResolution = 'é Full HD'
+    itsFullHd = 'Não'
+  }
+  sizeResult.innerText = `The scren size is ${screenWidth} x ${screenHeight} isso ${itsFullHd} ${screenResolution} `
+}
