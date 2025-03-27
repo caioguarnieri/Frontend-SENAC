@@ -440,12 +440,11 @@ function somenteLetras() {
   let result = window.document.getElementById('applyCatch');
 
   try{
-    let userLetras = letras.value;
-     if (typeof letras[x] === "number"){
-       throw new Error ('Erro: Não digite números');
+     if (/\d/.test(letras)){
+      throw new Error ('Erro: Não digite números');
+      }else {
+       result.innerText = `Você digitou = ${letras}` 
      }
-     let userLetters = userLetras;
-     result.innerText = `Você digitou = ${letras}`
   }catch(c){
     result.innerHTML = `<strong> VOCÊ NÃO PODE DIGITAR NÚMEROS </strong>`
   }finally{
@@ -460,7 +459,7 @@ function checkScreenSize() {
   let sizeResult = window.document.getElementById('screenSizeResult');
   let itsFullHd = '';
   let screenResolution = '';
-  
+
   if (screenWidth > 1850 && screenHeight > 1039){
     screenResolution = 'Full HD'
     itsFullHd = 'é'
