@@ -7,20 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="styles.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
   <script src="script.js" type="text/javascript" defer></script>
   <title>Projeto 1</title>
 </head>
 
-<body>
+<body onresize="changeSize()">
   <header class="home">
     <img src="https://logos-world.net/wp-content/uploads/2024/10/Daily-Bugle-Logo.png" alt=" Daily bungle logo" />
   </header>
 
-  <nav role="navigation" class="nave">
+  <i role="navigation" class="material-symbols-outlined" id="naveId">
     <a href="index.html">Home</a>
     <a href="gallery.html">Galeria</a>
+  </i>
   
-  </nav>
   <div class="main">
     <aside class="aside-left">
       <form class="formNotas">
@@ -65,7 +66,6 @@
         <form>
           <p>
           <h1>NOTAS</h1>
-
           <input id="nota1" type="number" placeholder="Nota 1º Semestre">
           <input id="nota2" type="number" placeholder="Nota 2º Semestre">
           <input id="soma" type="button" onclick="somarNotas()" value="Total">
@@ -150,7 +150,7 @@
         </form>
       </div>
 
-      <div class="newsbox"        <form class="formNotas">
+      <div class="newsbox"  class="formNotas">
           <p>
           <h1>Crescente ou Descrecente ?</h1>
           <h4>O Programa vai parar quando os numeros forem iguais</h4>
@@ -205,10 +205,8 @@
           <p>
           <h1>ARRAY</h1>
           <h1>Classificar array </h1>
-        
           <input id="classificarDados" type="button" onclick="userDados()" value="START">
           <h4 id="mostrarArray"></h4>
-          
           <input id="soma" type="reset" value="Limpar" />
           </p>
         </form>

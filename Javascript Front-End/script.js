@@ -438,7 +438,6 @@ function userDados() {
 function somenteLetras() {
   let letras = window.document.getElementById('digiteLetras').value;
   let result = window.document.getElementById('applyCatch');
-
   try{
      if (/\d/.test(letras)){
       throw new Error ('Erro: Não digite números');
@@ -451,7 +450,6 @@ function somenteLetras() {
     console.log('finally')
   }
 } 
-
 
 function checkScreenSize() {
   let screenHeight = screen.availHeight;
@@ -468,4 +466,16 @@ function checkScreenSize() {
     itsFullHd = 'Não'
   }
   sizeResult.innerText = `The scren size is ${screenWidth} x ${screenHeight} isso ${itsFullHd} ${screenResolution} `
+}
+
+function changeSize() {
+  if(window.inn >= 768){
+    naveId.style.display = 'block'
+  }else {
+    naveId.style.display = 'none'
+  }
+}
+
+function smallerSize() {
+
 }

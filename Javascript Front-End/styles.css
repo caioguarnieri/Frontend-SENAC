@@ -1,9 +1,9 @@
 
-.nave {
+#naveId{
+  display: block;
   border-radius: 10px;
-  background-color: #ec7d7d;
-  display: flex;
-  justify-content: space-evenly;
+  background-color: #f8aeae;
+  justify-content: center;
   padding: 5px;
 }
 .nave a {
@@ -156,5 +156,16 @@ label {
   border: 1px chocolate solid;
 }
 
+#burguer{
+  display: block;
+}
 
+@media screen and (min-width:768px){
+  i#burguer{
+    display: none;
+  }
+  nav{
+    display: inline-block;
+  }
+}
 
