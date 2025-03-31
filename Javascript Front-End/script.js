@@ -199,16 +199,12 @@ function caixa() {
 
   if (troco >= 0) {
     respostaTotal1.innerText = `O Total é R$ ${valorTotal.toFixed(2)}`;
-    respostaRecebeu.innerText = `Você recebeu R$ ${dinheiroRecebido.toFixed(
-      2
-    )}`;
+    respostaRecebeu.innerText = `Você recebeu R$ ${dinheiroRecebido.toFixed(2)}`;
     respostaTroco.innerText = `O troco é R$ ${troco.toFixed(2)}`;
     respostaTroco.style.backgroundColor = `#90ee90 `;
   } else {
     respostaTotal1.innerText = `O Total é R$ ${valorTotal.toFixed(2)}`;
-    respostaRecebeu.innerText = `Você recebeu R$ ${dinheiroRecebido.toFixed(
-      2
-    )}`;
+    respostaRecebeu.innerText = `Você recebeu R$ ${dinheiroRecebido.toFixed(2)}`;
     respostaTroco.innerText = `Faltam R$ ${faltaDinheiro.toFixed(2)}`;
     respostaTroco.style.backgroundColor = `rgb(231, 77, 77)`;
   }
@@ -436,46 +432,48 @@ function userDados() {
 }
 
 function somenteLetras() {
-  let letras = window.document.getElementById('digiteLetras').value;
-  let result = window.document.getElementById('applyCatch');
-  try{
-     if (/\d/.test(letras)){
-      throw new Error ('Erro: Não digite números');
-      }else {
-       result.innerText = `Você digitou = ${letras}` 
-     }
-  }catch(c){
-    result.innerHTML = `<strong> VOCÊ NÃO PODE DIGITAR NÚMEROS </strong>`
-  }finally{
-    console.log('finally')
+  let letras = window.document.getElementById("digiteLetras").value;
+  let result = window.document.getElementById("applyCatch");
+  try {
+    if (/\d/.test(letras)) {
+      throw new Error("Erro: Não digite números");
+    } else {
+      result.innerText = `Você digitou = ${letras}`;
+    }
+  } catch (c) {
+    result.innerHTML = `<strong> VOCÊ NÃO PODE DIGITAR NÚMEROS </strong>`;
+  } finally {
+    console.log("finally");
   }
-} 
+}
 
 function checkScreenSize() {
   let screenHeight = screen.availHeight;
   let screenWidth = screen.availWidth;
-  let sizeResult = window.document.getElementById('screenSizeResult');
-  let itsFullHd = '';
-  let screenResolution = '';
+  let sizeResult = window.document.getElementById("screenSizeResult");
+  let itsFullHd = "";
+  let screenResolution = "";
 
-  if (screenWidth > 1850 && screenHeight > 1039){
-    screenResolution = 'Full HD'
-    itsFullHd = 'é'
-  }else {
-    screenResolution = 'é Full HD'
-    itsFullHd = 'Não'
+  if (screenWidth > 1850 && screenHeight > 1039) {
+    screenResolution = "Full HD";
+    itsFullHd = "é";
+  } else {
+    screenResolution = "é Full HD";
+    itsFullHd = "Não";
   }
-  sizeResult.innerText = `The scren size is ${screenWidth} x ${screenHeight} isso ${itsFullHd} ${screenResolution} `
+  sizeResult.innerText = `The scren size is ${screenWidth} x ${screenHeight} isso ${itsFullHd} ${screenResolution} `;
 }
 
+///// BURGUER MENU /////
+/*
 function changeSize() {
-  if(window.inn >= 768){
-    naveId.style.display = 'block'
-  }else {
-    naveId.style.display = 'none'
+  if (window.inn >= 768) {
+    naveId.style.display = "block";
+  } else {
+    naveId.style.display = "none";
   }
 }
 
-function smallerSize() {
+function smallerSize() {}
+*/
 
-}
