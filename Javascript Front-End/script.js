@@ -477,3 +477,38 @@ function changeSize() {
 function smallerSize() {}
 */
 
+/////////////////// MAP /////////////////////
+let numbers = [];
+
+function adicionarNumero(){
+  let userNumber = Number (window.document.getElementById('catchNumbers').value);
+  let seuNumero = window.document.getElementById('seuNumeroe');
+  numbers.push(userNumber);
+  userNumber = '';
+  
+seuNumero.innerText = `Seus números são ${numbers}`
+console.log(numbers); 
+};
+
+function startMap2(){
+  let respostaMap = window.document.getElementById('respostaMap');
+  let numbersMap = numbers.map((x) => x * 2 );
+
+  respostaMap.innerText = `O dobro é ${numbersMap}`;
+  console.log()
+}
+
+/////////////////// FILTER /////////////////////
+
+let numeros = [];
+function addNumero() {
+let pegarNumeros = Number (window.document.getElementById('pegarNumeros').value);
+let result1 = window.document.getElementById('filterResult1');
+numeros.push(pegarNumeros);
+result1.innerText = `Seus números são ${numeros}`;
+}
+function filtrar(){
+  let result2 = window.document.getElementById('filterResult2');
+  let filtered = numeros.filter(x => x % 2 === 0);
+  result2.innerText = `Os pares são ${filtered}`;
+}
